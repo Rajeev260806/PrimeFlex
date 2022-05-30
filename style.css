@@ -14,8 +14,9 @@ body{
     height: 70px;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 2px solid black;
     position: fixed;
+    border: 0.5px solid grey;
+    box-shadow: 0.5px 0.5px 10px grey;
 }
 .navbar-1{
     z-index: 2;
@@ -60,7 +61,6 @@ body{
     justify-content: center;
     padding-right: 20px;
     padding-left: 10px;
-    transition: all 1s ease-out;
 }
 .wood:hover{
     color: white;
@@ -74,7 +74,6 @@ body{
     flex-direction: column;
     justify-content: center;
     padding-right: 40px;
-    transition: all 1s ease-out;
 }
 .wood-1:hover{
     color: white;
@@ -87,7 +86,6 @@ body{
     flex-direction: column;
     justify-content: center;
     padding-right: 40px;
-    transition: all 1s ease-out;
 }
 .wood-2:hover{
     color: white;
@@ -100,7 +98,6 @@ body{
     flex-direction: column;
     justify-content: center;
     padding-right: 40px;
-    transition: all 1s ease-out;
 }
 .wood-3:hover{
     color: white;
@@ -113,7 +110,6 @@ body{
     flex-direction: column;
     justify-content: center;
     padding-right: 40px;
-    transition: all 1s ease-out;
 }
 .wood-4:hover{
     color: white;
@@ -128,18 +124,43 @@ body{
 
 /* Scrollbar start */
 .scroll{
-    top: 72.5px;
+    top: 72px;
+    bottom: 0;
     z-index: 2;
     height: 92%;
     width: 300px;
     position: fixed;
-    border: 2px solid black;
     overflow: scroll;
+    border: 0.5px solid grey;
+    box-shadow: 0.5px 0.5px 3px grey;
 }
 li{
     list-style: none;
-    padding: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    width: 200px;
+    border-radius: 20px;
+    color: #495057;
+}
+li:hover{
+    background-color: rgb(78, 76, 76);
+    color: white;
+    cursor: pointer;
 }
 .design{
     padding-left: 20px;
+}
+.special{
+    color: #212121;
+    padding-left: 0px;
+    padding-top: 20px;
+    font-size: 1.1rem;
+    font-family: Roboto Condensed;
+}
+.special:hover{
+    background-color: white;
+    color: black;
+    cursor: default;
 }
