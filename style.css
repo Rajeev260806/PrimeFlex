@@ -2,11 +2,15 @@
 /* Navbar start */
 body{
     margin: 0%;
+    width: 100vw;
+    height: 100vw;
 }
 .container{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    position: relative;
+    align-content: flex-start;
 }
 .navbar{
     display: flex;
@@ -17,9 +21,9 @@ body{
     position: fixed;
     border: 0.5px solid grey;
     box-shadow: 0.5px 0.5px 10px grey;
+    z-index: 98;
 }
 .navbar-1{
-    z-index: 2;
     display: flex;
     width: 50%;
     height: 70px;
@@ -164,3 +168,83 @@ li:hover{
     color: black;
     cursor: default;
 }
+/* scroll end */
+
+/* top container start */
+.main{
+    display: block;
+    position: relative;
+    top: 70px;
+    left: 300px;
+    z-index: 96;
+    opacity: 1;
+}
+.top-container{
+    position: relative;
+    height: 500px;
+    width: 1140px;
+    background-image: linear-gradient(to right bottom, #ccdff8, #d3e3f8, #dae7f7, #e1eaf7, #e8eef6);
+    left: 0px;
+    top: 0;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+}
+.tp-1{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 50%;
+    padding: 100px 50px;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 80;
+}
+.perfect{
+    color: #495057;
+}
+.content{
+    color: #6D757D;
+    font-size: 1.2rem;
+}
+.time{
+    height: 40px;
+    width: 500px;
+    font-size: 1.2rem;
+    box-shadow: 0.5px 0.5px 10px grey;
+}
+.links{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.download{
+    color: #0078e3;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-right: 20px;
+}
+.github{
+    color: #0078e3;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-left: 20px;
+}
+.tp-2{
+    height: 500px;
+    width: 50%;
+    position: relative;
+    display: inline;
+    left: 50%;
+}
+.image{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    padding-left: 70px;
+    padding-top: 50px;
+}
+/* top container end */
+
+/* middle container start */
